@@ -62,7 +62,7 @@ The following instructions are adapted from here: [ComfyUI on Apple Silicon from
 
 #### Install a Model
 
-We will obtain trained [image-generation models from civitai.com](https://civitai.com/models). *Note*: these models are often advertised with insipid and salacious thumbnail images, but are generally capable of generating a much wider range of images. 
+We will obtain trained [image-generation models from civitai.com](https://civitai.com/models). *Note*: these models are often advertised with insipid and salacious thumbnail pics, but are generally capable of generating a much wider range of images. 
 
 * The default ComfyUI workflow is setup for use with a Stable Diffusion 1.5 checkpoint.
 * We'll get things started with the [DreamShaper 8 checkpoint](https://civitai.com/models/4384/dreamshaper) model page.
@@ -85,7 +85,7 @@ We will obtain trained [image-generation models from civitai.com](https://civita
 
 #### Finding other Models
 
-Many other models are available. You need to get the format correct for things to work.  Search for "SD 1.5" "Checkpoint" "Trained" "Safe Tensor" models [as in this search](https://civitai.com/search/models?baseModel=SD%201.5&modelType=Checkpoint&checkpointType=Trained&sortBy=models_v9). The following models are all working for me in this setup (these models are all 2-4GB in size): 
+Many other models are available. You need to obtain models in the correct format for things to work. Search for "SD 1.5" "Checkpoint" "Trained" "Safe Tensor" models [as in this search](https://civitai.com/search/models?baseModel=SD%201.5&modelType=Checkpoint&checkpointType=Trained&sortBy=models_v9). The following models are all working for me in this setup (these models are each 2-4GB in size): 
 
 * [DreamShaper](https://civitai.com/models/4384/dreamshaper)
 * [Realistic Stock Photo](https://civitai.com/models/139565/realistic-stock-photo) 
