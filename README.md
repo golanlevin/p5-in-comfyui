@@ -62,7 +62,7 @@ The following instructions are adapted from here: [ComfyUI on Apple Silicon from
 
 #### Install a Model
 
-We will obtain trained [image-generation models from civitai.com](https://civitai.com/models). *Note*: these models are often advertised with insipid and salacious thumbnail pics, but are generally capable of generating a much wider range of images. 
+We will obtain trained [image-generation models from civitai.com](https://civitai.com/models). *Note*: these models are often advertised with insipid and salacious thumbnail pics, but are generally capable of generating a much wider range of images. Sigh.
 
 * The default ComfyUI workflow is setup for use with a Stable Diffusion 1.5 checkpoint.
 * We'll get things started with the [DreamShaper 8 checkpoint](https://civitai.com/models/4384/dreamshaper) model page.
