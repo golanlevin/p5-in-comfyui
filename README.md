@@ -140,8 +140,10 @@ function draw() {
   * Connect `latent` of the *VAE Encode* node, to `latent_image` of the *KSampler* node.
   * Discard the previous *Empty Latent Image*.
   * Feel free to add *Preview Image* nodes at intermediate points along the chain.
+  * You can download my [Comfy workflow document](p5js_in_comfyui_workflow.json) here if you want to try. 
 
 ![p5_comfy.png](img/p5_comfy.png)
 
 * Pressing "Queue Prompt" will trigger the node to pass control to the JS to query for the canvas obect in the iframe and then return it back for processing to an image. Fun!
+* Benjamin Fox advises that "If you lower the denoise value in the sampler a little bit (maybe 0.7) it'll more closely match the sketch."
 
