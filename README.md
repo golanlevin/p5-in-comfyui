@@ -62,7 +62,7 @@ The following instructions are adapted from here: [ComfyUI on Apple Silicon from
 
 #### Install a Model
 
-We will obtain trained [image-generation models from civitai.com](https://civitai.com/models). *Note*: these models are often advertised with insipid and salacious thumbnail pics, but are generally capable of generating a much wider range of images. Sigh.
+We will obtain trained [image-generation models from civitai.com](https://civitai.com/models). *Note*: these models are often advertised with insipid and salacious thumbnail pics, but are generally capable of generating a much wider range of images than the thumbnails would suggest. Sigh.
 
 * The default ComfyUI workflow is setup for use with a Stable Diffusion 1.5 checkpoint.
 * We'll get things started with the [DreamShaper 8 checkpoint](https://civitai.com/models/4384/dreamshaper) model page.
@@ -145,5 +145,17 @@ function draw() {
 ![p5_comfy.png](img/p5_comfy.png)
 
 * Pressing "Queue Prompt" will trigger the node to pass control to the JS to query for the canvas obect in the iframe and then return it back for processing to an image. Fun!
-* Benjamin Fox advises that "If you lower the denoise value in the sampler a little bit (maybe 0.7) it'll more closely match the sketch."
+* Benjamin Fox advises that "If you lower the *denoise* value in the sampler a little bit (maybe 0.7) it'll more closely match the sketch." I got good results with a *denoise* value of 0.85. 
+* Fox also advises that, in case you need to update the version of `comfyui-p5js-node`, it's unlikely that it is listed (yet) in the Comfy Manager node, so "the best thing to do is cd to the custom_nodes folder, delete the p5js node folder, and then do the command-line install of that node again."
 
+---
+
+## Gallery
+
+Below, **at left:** a simple generative design made in p5.js, consisting of several thousand ellipses with randomized positions, sizes, and colors. **At right:** the lefthand p5.js image, interpreted by Stable Diffusion using the prompt "bowl of oatmeal". 
+
+![oatmeal.png](img/oatmeal.png)
+
+Below, **at left:** a collection of randomly oriented cubes, generated in p5.js using a limited color palette. **At right:** the lefthand p5.js image, interpreted by Stable Diffusion with the prompt "crystals, geodes". *Image by Benjamin Fox.* 
+
+![tracerstar_geodes.jpg](img/tracerstar_geodes.jpg)
