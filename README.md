@@ -120,14 +120,16 @@ function setup() {
 }
 
 function draw() {
-  background('orange');
+  background('AntiqueWhite'); 
   noStroke(); 
   
-  fill('DeepSkyBlue'); 
-  rect(0,0,width,150); 
+  fill('LightSlateGray'); 
+  rect(0,0,width,220); 
   
-  fill('SaddleBrown'); 
-  ellipse(220,300, 200,80); 
+  fill(70, 40, 10); 
+  ellipse(220,430, 200,80); 
+  fill(90, 60, 15); 
+  ellipse(370,340, 120,60); 
 }
 ```
 
