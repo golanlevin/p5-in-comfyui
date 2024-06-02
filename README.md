@@ -31,7 +31,7 @@ ComfyUI is a node-based, web-based GUI for Stable-Diffusion-based image synthesi
 
 I always advise doing your Python work in a dedicated virtual environment. This way, when you install a bunch of weird stuff, you don't hose your entire computer. 
 
-* Cd to your desired directory, e.g.: `cd /Users/golan/Desktop/comfy-p5`
+* Cd to your desired directory, e.g.: `cd /Users/myUserName/Desktop/comfy-p5`
 * Create the virtual environment: `python3.12 -m venv myComfyEnv`
 * Activate the virtual environment: `source myComfyEnv/bin/activate`
 
@@ -54,7 +54,7 @@ The following instructions are adapted from here: [ComfyUI on Apple Silicon from
 
 > *ComfyUI-Manager is an extension designed to enhance the usability of ComfyUI. It offers management functions to install, remove, disable, and enable various custom nodes of ComfyUI.*
 
-* Change to the ComfyUI/custom_nodes folder: `cd custom_nodes`
+* Change to the `ComfyUI/custom_nodes` folder: `cd custom_nodes`
 * Clone ComfyUI-Manager repo: `git clone https://github.com/ltdrdata/ComfyUI-Manager.git`
 * Change back to the ComfyUI folder: `cd ..`
 * Run ComfyUI: `python3 main.py`
@@ -148,7 +148,23 @@ function draw() {
 
 * Pressing "Queue Prompt" will trigger the node to pass control to the JS to query for the canvas obect in the iframe and then return it back for processing to an image. Fun!
 * Benjamin Fox advises that "If you lower the *denoise* value in the sampler a little bit (maybe 0.7) it'll more closely match the sketch." I got good results with a *denoise* value of 0.85. 
-* Fox also advises that, in case you need to update the version of `comfyui-p5js-node`, it's unlikely that it is listed (yet) in the Comfy Manager node, so "the best thing to do is cd to the custom_nodes folder, delete the p5js node folder, and then do the command-line install of that node again."
+* Fox also advises that, in case you need to update the version of `comfyui-p5js-node`, it's unlikely that it is listed (yet) in the Comfy Manager node, so "the best thing to do is cd to the `ComfyUI/custom_nodes` folder, delete the p5js node folder, and then do the command-line install of that node again", as follows:
+
+```
+cd custom_nodes
+rm -rf comfyui-p5js-node
+git clone https://github.com/tracerstar/comfyui-p5js-node.git
+```
+
+
+---
+## Quickstart Reminder
+
+```
+cd ComfyUI
+python3 main.py
+http://127.0.0.1:8188
+```
 
 ---
 
