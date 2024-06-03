@@ -9,7 +9,10 @@ This page adapts instructions and other media from:
 * [comfyui-p5js-node](https://github.com/tracerstar/comfyui-p5js-node), a custom node for connecting p5.js into ComfyUI, created by Benjamin Fox (@tracerstar)
 * [ComfyUI on Apple Silicon from Scratch — 2024](https://medium.com/@tchpnk/comfyui-on-apple-silicon-from-scratch-2024-58def01a3319) by Jason Griffin
 
-My configuration: I'm using Python 3.12.3 on 16GB Mac M1, running Sonoma 14.5. You should have recent versions of Git and Python installed.
+You'll need: 
+
+* Recent versions of Git and Python installed. I'm using Python 3.12.3 on a 16GB Mac M1, running Sonoma 14.5.
+* At least 4GB of disk space (and preferably more like 20GB). 
 
 #### Contents
 
