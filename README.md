@@ -13,6 +13,7 @@ You'll need:
 
 * Recent versions of Git and Python installed. I'm using Python 3.12.3 on a 16GB Mac M1, running Sonoma 14.5.
 * At least 4GB of disk space (and preferably more like 20GB). 
+* Basic familiarity with p5.js and commmand line.
 
 #### Contents
 
@@ -154,6 +155,7 @@ function draw() {
 * Fox also advises that, in case you need to update the version of `comfyui-p5js-node`, it's unlikely that it is listed (yet) in the Comfy Manager node, so "the best thing to do is cd to the `ComfyUI/custom_nodes` folder, delete the p5js node folder, and then do the command-line install of that node again", as follows:
 
 ```
+: Commands to reinstall comfyui-p5js-node:
 cd custom_nodes
 rm -rf comfyui-p5js-node
 git clone https://github.com/tracerstar/comfyui-p5js-node.git
@@ -163,10 +165,13 @@ git clone https://github.com/tracerstar/comfyui-p5js-node.git
 ---
 ## Quickstart Reminder
 
+Once you have everything set up, here's the quick summary to launch:
+
 ```
+: Commands to re-launch ComfyUI
 cd ComfyUI
 python3 main.py
-http://127.0.0.1:8188
+open http://127.0.0.1:8188
 ```
 
 ---
